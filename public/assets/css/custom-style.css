@@ -1,0 +1,332 @@
+.btn-login,
+
+.menu-btn-login {
+  font-family: "Arial", sans-serif;
+  background-color: #eee;
+  color: #555555;
+  padding: 5px 20px 5px 6px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  height: 46px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
+}
+
+.btn-login i,
+.menu-btn-login i {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  line-height: 0;
+  margin-right: 17px;
+  pointer-events: none;
+}
+
+.btn-login i img,
+.menu-btn-login i img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.btn-login span,
+.menu-btn-login span {
+  pointer-events: none;
+}
+
+.btn-login .text-mobile,
+.menu-btn-login .text-mobile {
+  display: none;
+}
+
+.dropbtn {
+  width: 230px;
+}
+
+.dropbtn i {
+  margin-right: 13px;
+}
+
+.dropbtn::after {
+  content: "";
+  width: 12px;
+  height: 8px;
+  flex: none;
+  background: url(../images/chevron-down-icon-grey.svg) no-repeat center/contain;
+  margin-left: 13px;
+}
+
+.btn-login.dark-mode,
+.menu-btn-login.dark-mode {
+  background: #181818;
+  color: #ffffff;
+  box-shadow: rgba(117, 117, 117, 0.8) 0px -2px 0px inset;
+}
+
+.dropbtn.dark-mode::after {
+  background: url(../images/chevron-down-icon-white.svg) no-repeat center/contain;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  font-family: "Arial", sans-serif;
+  display: none;
+  position: absolute;
+  min-width: 230px;
+  width: auto;
+  overflow: auto;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(97, 97, 97, 0.05);
+  z-index: 10;
+  padding: 16px;
+  margin: 10px 0 0 0;
+  box-sizing: border-box;
+}
+
+.dropdown-content li {
+  margin: 0 0 4px 0;
+  padding: 0;
+  display: block;
+}
+
+.dropdown-content li a {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #525252;
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-content li a i {
+  line-height: 0;
+  margin-left: auto;
+  width: 18px;
+  height: 16px;
+}
+
+.dropdown-content li a i img {
+  width: 100%;
+}
+
+.dropdown-content li:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown-content .divider {
+  height: 1px;
+  width: 100%;
+  display: block;
+  margin: 0;
+  background: #eeeeee;
+  margin: 12px 0;
+}
+
+.show {
+  display: block;
+}
+
+/* pop modal design  */
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(15px);
+  z-index: 5;
+}
+
+.modal {
+  width: 360px;
+  padding: 24px 30px 34px 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #EEE;
+  border-radius: 10px;
+  z-index: 10;
+  box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.05);
+  background: white;
+}
+
+.modal h4 {
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  color:#000!important;
+  margin:0px!important;
+  padding: 0px!important;
+}
+
+.modal .divider {
+  height: 1px;
+  width: 100%;
+  display: block;
+  background: #EEEEEE;
+  margin: 22px 0 28px 0;
+}
+
+.modal .modal-wallet-select-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-inline: 20px;
+  padding-block: 10px;
+  border-radius: 10px;
+  border: 1px solid #EEE;
+  background: #FFF;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  text-decoration: none;
+  margin-bottom: 15px;
+  transition: 0.3s all;
+}
+
+.modal-dark {
+  border: #666!important;
+  background: #181818;
+}
+.modal-dark .close-modal {
+  filter: brightness(0) invert(1);
+}
+.modal-dark h4 {
+  color: white!important;
+}
+.modal-dark .divider {
+  background: #757575;
+}
+.modal-dark .modal-wallet-select-btn {
+  border: 1px solid #181818;
+  background: #333;
+  color: white;
+}
+.modal-dark .modal-wallet-select-btn:hover {
+  background: #555!important;
+color:#fff!important;
+}
+.modal-dark p {
+  color: white!important;
+}
+.modal-dark p a {
+  color: inherit;
+}
+
+.modal .modal-wallet-select-btn img {
+  height: 40px;
+  width: 40px;
+}
+
+.modal p {
+  color: #515151;
+  font-family: Arial!important;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 7px;
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.modal .close-modal {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  top: 28px;
+  right: 28px;
+  cursor: pointer;
+  border: none;
+  background: url(../images/modal-cross.svg) no-repeat center/contain;
+  z-index: 8;
+}
+
+.modal .modal-wallet-select-btn:hover {
+  background: #f4f4f4;
+  color:#000;
+}
+
+.modal-terms {
+  font-family: Arial!important;
+}
+.modal-terms a {
+  text-decoration: underline !important;
+}
+
+/*  */
+
+@media (max-width: 575px) {
+
+  .btn-login,
+  .menu-btn-login {
+    height: 36px;
+    padding: 0px 16px;
+    width: auto;
+    font-size: 15px;
+    line-height: 16px;
+  }
+
+  .btn-login i,
+  .menu-btn-login i {
+    display: none;
+  }
+
+  .btn-login .text-desktop,
+  .menu-btn-login .text-desktop {
+    display: none;
+  }
+
+  .btn-login .text-mobile,
+  .menu-btn-login .text-mobile {
+    display: initial;
+  }
+
+  .dropbtn {
+    padding: 0px 12px 0 0px;
+  }
+
+  .dropbtn i {
+    display: initial;
+    margin: 0;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin-left: 2px;
+  }
+
+  .dropbtn span {
+    display: none;
+  }
+
+  .dropbtn.dark-mode {
+    padding: 0px 12px 0 0px;
+  }
+
+  .dropdown-content {
+    min-width: 150px;
+    padding: 10px;
+  }
+}
